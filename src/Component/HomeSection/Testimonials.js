@@ -1,5 +1,8 @@
 import React, { useState } from "react";
-import { FaQuoteLeft, FaStar } from "react-icons/fa";
+import { FaQuoteLeft, FaStar, FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Testimonials = () => {
   const [filter, setFilter] = useState("all");
@@ -7,6 +10,62 @@ const Testimonials = () => {
   const filteredTestimonials = filter === "all" 
     ? testimonials 
     : testimonials.slice(0, 5);
+
+  // Custom arrow components for the slider
+  const PrevArrow = (props) => {
+    const { onClick } = props;
+    return (
+      <button 
+        className="absolute left-0 z-10 top-1/2 -translate-y-1/2 -ml-5 bg-white/80 p-2 rounded-full shadow-md hover:bg-teal-500 hover:text-white transition"
+        onClick={onClick}
+      >
+        <FaChevronLeft />
+      </button>
+    );
+  };
+
+  const NextArrow = (props) => {
+    const { onClick } = props;
+    return (
+      <button 
+        className="absolute right-0 z-10 top-1/2 -translate-y-1/2 -mr-5 bg-white/80 p-2 rounded-full shadow-md hover:bg-teal-500 hover:text-white transition"
+        onClick={onClick}
+      >
+        <FaChevronRight />
+      </button>
+    );
+  };
+
+  // Slider settings
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    prevArrow: <PrevArrow />,
+    nextArrow: <NextArrow />,
+    rtl: true, // Right to left animation
+    autoplay: true, // Enable autoplay
+    autoplaySpeed: 3000, // Change slides every 3 seconds
+    pauseOnHover: true, // Pause autoplay when hovering
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
 
   return (
     <div 
@@ -38,32 +97,33 @@ const Testimonials = () => {
           </div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-          {filteredTestimonials.map((testimonial, index) => (
-            <div 
-              key={index} 
-              className="bg-white/90 p-4 sm:p-6 rounded-lg shadow-md hover:shadow-xl transition transform hover:-translate-y-1 duration-300 backdrop-blur-sm"
-            >
-              <div className="flex justify-between items-start mb-4">
-                <FaQuoteLeft className="text-teal-500 text-xl sm:text-2xl" />
-                <div className="flex text-yellow-400">
-                  {[...Array(5)].map((_, i) => (
-                    <FaStar key={i} />
-                  ))}
+        <div className="relative px-8">
+          <Slider {...settings}>
+            {filteredTestimonials.map((testimonial, index) => (
+              <div key={index} className="px-2">
+                <div className="bg-white/90 p-4 sm:p-6 rounded-lg shadow-md hover:shadow-xl transition transform hover:-translate-y-1 duration-300 backdrop-blur-sm h-full">
+                  <div className="flex justify-between items-start mb-4">
+                    <FaQuoteLeft className="text-teal-500 text-xl sm:text-2xl" />
+                    <div className="flex text-yellow-400">
+                      {[...Array(5)].map((_, i) => (
+                        <FaStar key={i} />
+                      ))}
+                    </div>
+                  </div>
+                  <p className="mb-4 italic text-gray-700 text-sm sm:text-base">{testimonial.quote}</p>
+                  <div className="flex items-center mt-4 pt-4 border-t border-gray-100">
+                    <div className="bg-teal-500 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">
+                      {testimonial.name.charAt(0)}
+                    </div>
+                    <div>
+                      <div className="font-bold">{testimonial.name}</div>
+                      <div className="text-xs text-gray-500">Satisfied Client</div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <p className="mb-4 italic text-gray-700 text-sm sm:text-base">{testimonial.quote}</p>
-              <div className="flex items-center mt-4 pt-4 border-t border-gray-100">
-                <div className="bg-teal-500 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-3">
-                  {testimonial.name.charAt(0)}
-                </div>
-                <div>
-                  <div className="font-bold">{testimonial.name}</div>
-                  <div className="text-xs text-gray-500">Satisfied Client</div>
-                </div>
-              </div>
-            </div>
-          ))}
+            ))}
+          </Slider>
         </div>
         
         {filter !== "all" && (
@@ -126,5 +186,7 @@ const testimonials = [
 ];
 
 export default Testimonials;
+
+
 
 

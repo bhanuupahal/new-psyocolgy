@@ -3,7 +3,7 @@ import { FaUserMd, FaHeart, FaComments, FaBrain, FaStar, FaAward, FaCertificate,
 
 const About = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-r from-orange-100 via-yellow-50 to-green-50">
+    <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <div className="relative py-20 bg-cover bg-center" 
            style={{ backgroundImage: "url('/images/psychologist_png.avif')" }}>
@@ -18,10 +18,10 @@ const About = () => {
             Dedicated to improving mental health and well-being through compassionate care and evidence-based practices.
           </p>
         </div>
-      </div>
+      </div> 
 
       {/* Introduction Section */}
-      <div className="max-w-5xl mx-auto px-6 py-12">
+      <div className="max-w-5xl mx-auto px-6 py-28">
         <div className="bg-gradient-to-br from-white to-blue-50 rounded-2xl shadow-xl p-8 -mt-20 relative z-10 border-t border-l border-white/80">
           <div className="absolute -top-5 -left-5 bg-gradient-to-r from-pink-500 to-purple-500 text-white text-lg font-bold px-6 py-2 rounded-full shadow-lg">
             Meet Dr. Suman

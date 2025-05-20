@@ -1,9 +1,9 @@
 import React from "react";
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaPaperPlane } from "react-icons/fa";
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaPaperPlane, FaCalendarAlt } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-r from-orange-100 via-yellow-50 to-green-50">
+    <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <div className="relative py-16 bg-cover bg-center" 
            style={{ backgroundImage: "url('/images/contactus_png.png')" }}>
@@ -14,8 +14,7 @@ const Contact = () => {
           <p className="text-lg text-white leading-relaxed max-w-2xl mx-auto drop-shadow-md">
             We're here to help you on your journey to better mental health
           </p>
-        </div>740
-'
+        </div>
       </div>
 
       {/* Contact Form Section */}
@@ -27,14 +26,24 @@ const Contact = () => {
               <h2 className="text-2xl font-serif font-semibold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-blue-600">Contact Information</h2>
               
               <div className="space-y-6">
+                {/* Appointment Booking - New Section */}
+                <div className="bg-white/70 p-4 rounded-lg border-l-4 border-teal-500 shadow-md">
+                  <div className="flex items-start">
+                    <div className="bg-gradient-to-br from-teal-400 to-blue-500 rounded-full p-3 mr-4 shadow-md">
+                      <FaCalendarAlt className="text-white" />
+                    </div>
+                    <div>
+                      <h3 className="font-medium text-gray-800 text-lg">Book Your Appointment Now</h3>
+                      <p className="text-teal-700 font-medium">Call us at +91-74047-94451</p>
+                    </div>
+                  </div>
+                </div>
+                
                 <div className="flex items-start">
                   <div className="bg-gradient-to-br from-teal-400 to-blue-500 rounded-full p-3 mr-4 shadow-md">
                     <FaPhone className="text-white" />
                   </div>
-                  <div>
-                    <h3 className="font-medium text-gray-800">Phone</h3>
-                    <p className="text-teal-700">+91 98765 43210</p>
-                  </div>
+                  
                 </div>
                 
                 <div className="flex items-start">
@@ -53,7 +62,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-medium text-gray-800">Office</h3>
-                    <p className="text-teal-700">123 Wellness Street, Mumbai, India</p>
+                    <p className="text-teal-700">DSS-50 KAMRI ROAD SEC 15 HISAR HARYANA, INDIA</p>
                   </div>
                 </div>
               </div>
@@ -115,4 +124,5 @@ const Contact = () => {
 };
 
 export default Contact;
+
 

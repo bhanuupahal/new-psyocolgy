@@ -46,7 +46,6 @@ const Nav = () => {
               { to: "/home", label: "Home" }, 
               { to: "/about", label: "About" }, 
               { to: "/contact", label: "Contact" }, 
-              { to: "/trusts", label: "Trusts" },
               { to: "/testimonials", label: "Testimonials" }
             ].map(({ to, label }) => (
               <Link

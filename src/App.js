@@ -1,32 +1,29 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Nav from "./Component/Nav";
-import Home from "./Component/Home";
-import About from "./Component/About";
-import Contact from "./Component/Contact";
-import Trusts from "./Component/Trusts";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Nav from "./Component/NavbarSection/Nav";
+import Home from "./Component/HomeSection/Home";
+import About from "./Component/HomeSection/About";
+import Contact from "./Component/HomeSection/Contact";
 import Login from "./Component/Login";
 import Signup from "./Component/Signup";
-import Testimonials from "./Component/Testimonials";
+import Footer from "./Component/FooterSection/Footer";
 
 function App() {
   return (
-    <div className="bg-gradient-to-r from-orange-100 to-green-50">
-       <Router>
-        <Nav/>
-          <Routes>
-           <Route path="/home" element={<Home/>} />
-           <Route path="/about" element={<About/>} />
-           <Route path="/contact" element={<Contact/>} />
-           <Route path="/trusts" element={<Trusts/>} />
-           <Route path="/testimonials" element={<Testimonials/>} />
-           <Route path="/login" element={<Login/>} />
-           <Route path="/signup" element={<Signup/>} />
-           <Route path="/" element={<Home/>} />
-         </Routes>
-         </Router>
-     </div>
+    <Router>
+      <Nav />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 
 export default App;
+
