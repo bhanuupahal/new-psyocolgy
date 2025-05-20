@@ -19,7 +19,7 @@ const Hero = () => {
       </div>
       
         {/* Centered image in the yellow div */}
-        <div className="w-96 h-96 sm:w-[28rem] sm:h-[28rem] lg:w-[32rem] lg:h-[32rem] rounded-full overflow-hidden border-4 mr-24">
+        <div className="w-96 h-96 sm:w-[28rem] sm:h-[28rem] lg:w-[32rem] lg:h-[32rem] rounded-full overflow-hidden border-4 mx-auto lg:mr-24">
           <img src="/images/bg11.webp" alt="Background" className="w-full h-full object-cover" />
         </div>
       </div>
@@ -28,4 +28,5 @@ const Hero = () => {
 };
 
 export default Hero;
+
 
