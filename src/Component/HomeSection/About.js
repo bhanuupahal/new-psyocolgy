@@ -85,108 +85,75 @@ const About = () => {
         </div>
       </div>
 
-      {/* Services Section */}
-      <div className="max-w-5xl mx-auto px-6 py-12">
-        <div className="text-center mb-12">
-          <span className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-1 rounded-full text-sm font-medium">WHAT WE OFFER</span>
-          <h2 className="text-3xl md:text-4xl font-serif font-bold mt-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-teal-600">Our Services</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-teal-400 mx-auto mt-4 rounded-full"></div>
-        </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl shadow-md p-6 hover:shadow-xl transition transform hover:-translate-y-2 duration-300 border border-purple-100">
-            <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
-              <FaBrain className="text-white text-2xl" />
-            </div>
-            <h3 className="text-xl font-semibold mb-3 text-center text-purple-800">Mental Health Treatment</h3>
-            <p className="text-purple-700 text-center">Comprehensive treatment for various mental health conditions.</p>
-          </div>
-          
-          <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl shadow-md p-6 hover:shadow-xl transition transform hover:-translate-y-2 duration-300 border border-blue-100">
-            <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
-              <FaComments className="text-white text-2xl" />
-            </div>
-            <h3 className="text-xl font-semibold mb-3 text-center text-blue-800">Family Therapy</h3>
-            <p className="text-blue-700 text-center">Resolving conflicts and improving communication within families.</p>
-          </div>
-          
-          <div className="bg-gradient-to-br from-teal-50 to-teal-100 rounded-xl shadow-md p-6 hover:shadow-xl transition transform hover:-translate-y-2 duration-300 border border-teal-100">
-            <div className="w-16 h-16 bg-gradient-to-br from-teal-400 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
-              <FaUserMd className="text-white text-2xl" />
-            </div>
-            <h3 className="text-xl font-semibold mb-3 text-center text-teal-800">Individual Counseling</h3>
-            <p className="text-teal-700 text-center">Personalized support for your unique mental health journey.</p>
-          </div>
-          
-          <div className="bg-gradient-to-br from-pink-50 to-pink-100 rounded-xl shadow-md p-6 hover:shadow-xl transition transform hover:-translate-y-2 duration-300 border border-pink-100">
-            <div className="w-16 h-16 bg-gradient-to-br from-pink-400 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
-              <FaHeart className="text-white text-2xl" />
-            </div>
-            <h3 className="text-xl font-semibold mb-3 text-center text-pink-800">Relationship Counseling</h3>
-            <p className="text-pink-700 text-center">Building stronger, healthier relationships through effective communication.</p>
-          </div>
-        </div>
-      </div>
+      
 
       {/* Approach Section */}
-      <div className="bg-gradient-to-r from-purple-50 via-indigo-50 to-blue-50 py-16">
-        <div className="max-w-4xl mx-auto px-6">
+      <div className="bg-gradient-to-r from-purple-50 via-indigo-50 to-blue-50 py-20 relative overflow-hidden">
+        {/* Decorative elements */}
+        <div className="absolute top-0 left-0 w-64 h-64 bg-teal-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+        <div className="absolute top-0 right-0 w-64 h-64 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+        <div className="absolute bottom-0 left-1/2 w-64 h-64 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
+        
+        <div className="max-w-4xl mx-auto px-6 relative z-10">
           <div className="text-center mb-12">
-            <span className="bg-gradient-to-r from-teal-500 to-blue-500 text-white px-4 py-1 rounded-full text-sm font-medium">OUR METHODOLOGY</span>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold mt-4 text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-blue-600">Our Approach</h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-teal-400 to-blue-400 mx-auto mt-4 rounded-full"></div>
+            <div className="inline-flex items-center justify-center w-16 h-16 mb-6 bg-gradient-to-r from-teal-400 to-blue-500 rounded-full shadow-lg">
+              <FaBrain className="text-white text-2xl" />
+            </div>
+            <span className="bg-gradient-to-r from-teal-500 to-blue-500 text-white px-6 py-2 rounded-full text-sm font-medium shadow-md">OUR METHODOLOGY</span>
+            <h2 className="text-3xl md:text-5xl font-serif font-bold mt-4 text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-blue-600">Our Approach</h2>
+            <div className="w-32 h-1 bg-gradient-to-r from-teal-400 to-blue-400 mx-auto mt-6 rounded-full"></div>
           </div>
           
-          <div className="bg-white rounded-2xl shadow-xl p-8 border-t border-l border-white/80">
-            <p className="text-gray-700 leading-relaxed mb-8 text-lg">
+          <div className="bg-white rounded-2xl shadow-2xl p-8 border-t border-l border-white/80 hover:shadow-blue-100 transition-all duration-300 transform hover:-translate-y-1">
+            <p className="text-gray-700 leading-relaxed mb-8 text-lg border-l-4 border-teal-400 pl-6 py-2 italic">
               Dr. Suman creates a safe, supportive, and confidential environment where clients can freely express themselves without judgment. Through evidence-based practices and personalized treatment plans, clients learn valuable skills to manage their mental health challenges effectively.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-              <div className="flex items-start bg-gradient-to-br from-teal-50 to-teal-100 p-4 rounded-xl">
-                <div className="bg-gradient-to-br from-teal-400 to-teal-600 rounded-full p-3 mr-4 shadow-md">
+              <div className="flex items-start bg-gradient-to-br from-teal-50 to-teal-100 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-l-4 border-teal-400">
+                <div className="bg-gradient-to-br from-teal-400 to-teal-600 rounded-full p-3 mr-4 shadow-lg">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-2 text-teal-800">Personalized Care</h3>
+                  <h3 className="font-semibold mb-2 text-teal-800 text-xl">Personalized Care</h3>
                   <p className="text-teal-700">Tailored treatment plans addressing your specific needs and goals.</p>
                 </div>
               </div>
               
-              <div className="flex items-start bg-gradient-to-br from-blue-50 to-blue-100 p-4 rounded-xl">
-                <div className="bg-gradient-to-br from-blue-400 to-blue-600 rounded-full p-3 mr-4 shadow-md">
+              <div className="flex items-start bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-l-4 border-blue-400">
+                <div className="bg-gradient-to-br from-blue-400 to-blue-600 rounded-full p-3 mr-4 shadow-lg">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-2 text-blue-800">Evidence-Based</h3>
+                  <h3 className="font-semibold mb-2 text-blue-800 text-xl">Evidence-Based</h3>
                   <p className="text-blue-700">Using proven therapeutic techniques backed by research.</p>
                 </div>
               </div>
               
-              <div className="flex items-start bg-gradient-to-br from-purple-50 to-purple-100 p-4 rounded-xl">
-                <div className="bg-gradient-to-br from-purple-400 to-purple-600 rounded-full p-3 mr-4 shadow-md">
+              <div className="flex items-start bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-l-4 border-purple-400">
+                <div className="bg-gradient-to-br from-purple-400 to-purple-600 rounded-full p-3 mr-4 shadow-lg">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-2 text-purple-800">Confidential</h3>
+                  <h3 className="font-semibold mb-2 text-purple-800 text-xl">Confidential</h3>
                   <p className="text-purple-700">Your privacy is respected and protected at all times.</p>
                 </div>
               </div>
               
-              <div className="flex items-start bg-gradient-to-br from-pink-50 to-pink-100 p-4 rounded-xl">
-                <div className="bg-gradient-to-br from-pink-400 to-pink-600 rounded-full p-3 mr-4 shadow-md">
+              <div className="flex items-start bg-gradient-to-br from-pink-50 to-pink-100 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-l-4 border-pink-400">
+                <div className="bg-gradient-to-br from-pink-400 to-pink-600 rounded-full p-3 mr-4 shadow-lg">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-2 text-pink-800">Supportive Environment</h3>
+                  <h3 className="font-semibold mb-2 text-pink-800 text-xl">Supportive Environment</h3>
                   <p className="text-pink-700">A safe space to express yourself without judgment.</p>
                 </div>
               </div>
@@ -199,4 +166,5 @@ const About = () => {
 };
 
 export default About;
+
 

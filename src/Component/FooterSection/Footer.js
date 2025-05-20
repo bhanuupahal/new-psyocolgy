@@ -20,7 +20,7 @@ const Footer = () => {
               <a href="https://facebook.com" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition duration-300">
                 <FaFacebook className="text-white" />
               </a>
-              <a href="https://youtube.com" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition duration-300">
+              <a href="www.youtube.com/@Dr.sumanBehmani" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition duration-300">
                 <FaYoutube className="text-white" />
               </a>
               <a href="https://twitter.com" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition duration-300">
@@ -88,11 +88,11 @@ const Footer = () => {
 
           {/* Column 4: Logo and Follow Us */}
           <div>
-            <div className="mb-6">
+            <div className="mb-6 transform hover:scale-105 transition-transform duration-300">
               <img 
                 src="/images/logo.webp" 
                 alt="Reset Yourself Logo" 
-                className="h-20 bg-white/10 p-2 rounded-lg"
+                className="h-28 w-auto bg-white/15 p-3 rounded-xl shadow-lg border border-teal-400/20"
               />
             </div>
             <h3 className="text-xl font-serif font-bold mb-4 text-teal-300">Follow Us</h3>
@@ -100,7 +100,7 @@ const Footer = () => {
               <a href="https://facebook.com" className="flex items-center space-x-2 text-gray-300 hover:text-teal-300 transition duration-300">
                 <FaFacebook /> <span>Facebook</span>
               </a>
-              <a href="https://youtube.com" className="flex items-center space-x-2 text-gray-300 hover:text-teal-300 transition duration-300">
+              <a href="www.youtube.com/@Dr.sumanBehmani" className="flex items-center space-x-2 text-gray-300 hover:text-teal-300 transition duration-300">
                 <FaYoutube /> <span>YouTube</span>
               </a>
             </div>
@@ -132,3 +132,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

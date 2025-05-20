@@ -10,8 +10,12 @@ const Reset = () => {
       <div className="relative py-20 bg-cover bg-center" 
            style={{ backgroundImage: "url('/images/Reset_png.avif')" }}>
         <div className="absolute inset-0 "></div>
-        <div className="relative max-w-4xl mx-auto px-6 text-center">
-          <p className="text-lg text-white leading-relaxed max-w-2xl mx-auto drop-shadow-md">
+        
+      </div>
+      <div className="text-center py-8">
+        <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-black mb-4">Why Choose Reset Yourself?</h1>
+        <div className="relative max-w-4xl mx-auto px-6">
+          <p className="text-lg text-black leading-relaxed max-w-2xl mx-auto drop-shadow-md">
             Begin your journey to mental wellness with our comprehensive assessment and personalized therapy plans.
           </p>
         </div>
@@ -99,7 +103,7 @@ const Reset = () => {
         
         {/* About Reset Yourself Section */}
         <div className="mb-16">
-          <div className="relative mt-6 p-8 bg-gradient-to-br from-white to-teal-50 rounded-xl shadow-xl border border-teal-100 overflow-hidden">
+          <div className="relative mt-6 p-8  rounded-xl shadow-xl border border-teal-100 overflow-hidden">
             {/* Background decorative elements */}
             <div className="absolute top-0 right-0 w-32 h-32 bg-teal-100 rounded-full opacity-20 -mr-10 -mt-10"></div>
             <div className="absolute bottom-0 left-0 w-24 h-24 bg-blue-100 rounded-full opacity-20 -ml-8 -mb-8"></div>
@@ -120,7 +124,7 @@ const Reset = () => {
               
               {/* Content with enhanced styling */}
               <div className="ml-4 pl-4 border-l-2 border-teal-100">
-                <p className="text-gray-700 leading-relaxed text-lg">
+                <p className="text-gray-700 leading-relaxed text-lg transition transform">
                   Reset Yourself is a counselling platform for mental health issues and it has been designed to help you cope with 
                   <span className="font-medium text-teal-700"> depression, anxiety, stress </span> 
                   and other psychological conditions. At Reset Yourself, we believe that 
@@ -144,6 +148,7 @@ const Reset = () => {
 };
 
 export default Reset;
+
 
 
 
