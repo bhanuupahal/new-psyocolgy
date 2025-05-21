@@ -1,6 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();
+
+  const handleAppointment = () => {
+    navigate("/contact");
+  };
+
   return (
     <div className="h-screen flex flex-col lg:flex-row items-center justify-center lg:justify-between px-8 sm:px-12 lg:px-24 bg-white">
       {/* Text Section */}
@@ -13,8 +20,12 @@ const Hero = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 mb-8">
-          <button className="px-8 py-4 bg-gradient-to-r from-teal-500 to-blue-600 text-white text-lg font-semibold rounded-full shadow-xl hover:scale-105 transition transform">Get Appointment</button>
-          <button className="px-8 py-4 bg-gradient-to-r from-blue-600 to-teal-500 text-white text-lg font-semibold rounded-full shadow-xl hover:scale-105 transition transform">Find Specialist</button>
+          <button 
+            onClick={handleAppointment}
+            className="px-8 py-4 bg-gradient-to-r from-teal-500 to-blue-600 text-white text-lg font-semibold rounded-full shadow-xl hover:scale-105 transition transform"
+          >
+            Get Appointment
+          </button>
         </div>
       </div>
       
@@ -28,5 +39,6 @@ const Hero = () => {
 };
 
 export default Hero;
+
 
 

@@ -9,6 +9,8 @@ import Contact from "./Contact";
 import Testimonials from "./Testimonials";
 import FAQ from "./FAQ";
 import MentalHealth from "./MentalHealth"; // Import the new MentalHealth component
+import Founder from "./Founder";
+import Service from "../ServiceSection/Service";
 
 const Home = () => {
   return (
@@ -16,8 +18,9 @@ const Home = () => {
       {/* Hero Section */}
       <Hero />
       <Reset />
-    
+      <Founder/>
       <About />
+      <Service/>
       <Testimonials />
         <MentalHealth /> 
       <FAQ />

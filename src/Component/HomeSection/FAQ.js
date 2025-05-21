@@ -36,9 +36,8 @@ const FAQ = () => {
       
       <div className="max-w-4xl mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center justify-center w-16 h-16 mb-6 bg-gradient-to-r from-teal-400 to-blue-500 rounded-full shadow-lg">
-            <FaQuestionCircle className="text-white text-2xl" />
-          </div>
+          
+          
           <h2 className="text-3xl md:text-5xl font-serif font-bold mt-4 text-transparent bg-clip-text bg-gradient-to-r from-teal-600 via-blue-600 to-purple-600">Frequently Asked Questions</h2>
           <div className="w-32 h-1 bg-gradient-to-r from-teal-400 via-blue-400 to-purple-400 mx-auto mt-6 rounded-full"></div>
           <p className="mt-6 text-gray-600 max-w-2xl mx-auto">Find answers to common questions about our services, policies, and mental health care approach.</p>

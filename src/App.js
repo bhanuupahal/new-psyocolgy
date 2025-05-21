@@ -7,6 +7,7 @@ import Contact from "./Component/HomeSection/Contact";
 import Login from "./Component/Login";
 import Signup from "./Component/Signup";
 import Footer from "./Component/FooterSection/Footer";
+import Founder from "./Component/HomeSection/Founder";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/founder" element={<Founder />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
@@ -26,4 +28,8 @@ function App() {
 }
 
 export default App;
+
+
+
+
 

@@ -5,7 +5,7 @@ import { FaBoltLightning, FaIdBadge } from "react-icons/fa6";
 
 const Reset = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-r from-orange-100 to-green-50">
+    <div className="min-h-screen bg-gradient-to-r from-orange-50 to-green-50">
       {/* Hero Section */}
       <div className="relative py-20 bg-cover bg-center" 
            style={{ backgroundImage: "url('/images/Reset_png.avif')" }}>

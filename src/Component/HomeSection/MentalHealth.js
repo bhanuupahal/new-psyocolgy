@@ -7,7 +7,6 @@ const MentalHealth = () => {
       {/* Hero Section */}
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
-          <span className="bg-gradient-to-r from-teal-500 to-blue-500 text-white px-6 py-2 rounded-full text-sm font-medium shadow-md">MENTAL WELLNESS</span>
           <h1 className="text-4xl md:text-5xl font-serif font-bold mt-6 text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-blue-600">Why Mental Health is Important?</h1>
           <div className="w-32 h-1 bg-gradient-to-r from-teal-400 to-blue-400 mx-auto mt-6 rounded-full"></div>
         </div>
