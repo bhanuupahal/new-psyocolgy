@@ -9,9 +9,9 @@ const Hero = () => {
   };
 
   return (
-    <div className="h-screen flex flex-col lg:flex-row items-center justify-center lg:justify-between px-8 sm:px-12 lg:px-24 bg-white">
+    <div className="min-h-screen flex flex-col lg:flex-row items-center justify-center lg:justify-between px-4 sm:px-12 lg:px-24 py-8 lg:py-0 bg-white">
       {/* Text Section */}
-      <div className="max-w-xl text-xl sm:text-2xl lg:text-3xl text-center lg:text-left lg:w-1/2">
+      <div className="max-w-xl text-xl sm:text-2xl lg:text-3xl text-center lg:text-left lg:w-1/2 mb-8 lg:mb-0">
         <h1 className="text-3xl sm:text-4xl lg:text-6xl font-serif font-bold capitalize mb-8 sm:mb-10 text-teal-800">
           Instant Mental Health Support
         </h1>
@@ -29,12 +29,11 @@ const Hero = () => {
         </div>
       </div>
       
-        {/* Centered image in the yellow div */}
-        <div className="w-96 h-96 sm:w-[28rem] sm:h-[28rem] lg:w-[32rem] lg:h-[32rem] rounded-full overflow-hidden border-4 mx-auto lg:mr-24">
-          <img src="/images/bg11.webp" alt="Background" className="w-full h-full object-cover" />
-        </div>
+      {/* Image Section */}
+      <div className="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[32rem] lg:h-[32rem] rounded-full overflow-hidden border-4 mx-auto lg:mr-24">
+        <img src="/images/bg11.webp" alt="Background" className="w-full h-full object-cover" />
       </div>
-    // </div>
+    </div>
   );
 };
 
