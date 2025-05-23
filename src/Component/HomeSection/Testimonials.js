@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaQuoteLeft, FaStar, FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { FaQuoteLeft, FaStar, FaChevronLeft, FaChevronRight, FaFacebook, FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -136,6 +136,26 @@ const Testimonials = () => {
             </button>
           </div>
         )}
+
+        {/* Social Media Icons */}
+        <div className="flex justify-center items-center gap-8 mt-16">
+          <a href="https://www.facebook.com/share/16HEhPewwL/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer"
+            className="border-4 border-blue-600 rounded-full p-4 hover:bg-blue-600 hover:text-white transition text-blue-600 text-4xl">
+            <FaFacebook />
+          </a>
+          <a href="https://www.instagram.com/dr_suman_behmani?igsh=Z284dWVsY2FmNHE1" target="_blank" rel="noopener noreferrer"
+            className="border-4 border-pink-500 rounded-full p-4 hover:bg-pink-500 hover:text-white transition text-pink-500 text-4xl">
+            <FaInstagram />
+          </a>
+          <a href="https://youtu.be/TF9EFA2P2Zk?si=Gu2PCICGMzoODqEX" target="_blank" rel="noopener noreferrer"
+            className="border-4 border-red-600 rounded-full p-4 hover:bg-red-600 hover:text-white transition text-red-600 text-4xl">
+            <FaYoutube />
+          </a>
+          <a href="https://linkedin.com/in/dr-suman-behmani-57899a229" target="_blank" rel="noopener noreferrer"
+            className="border-4 border-blue-800 rounded-full p-4 hover:bg-blue-800 hover:text-white transition text-blue-800 text-4xl">
+            <FaLinkedin />
+          </a>
+        </div>
       </div>
     </div>
   );

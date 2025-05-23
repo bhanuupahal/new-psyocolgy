@@ -46,7 +46,7 @@ const Nav = () => {
               { to: "/home", label: "Home" }, 
               { to: "/about", label: "About" }, 
               { to: "/contact", label: "Contact" }, 
-              { to: "/testimonials", label: "Testimonials" }
+              { to: "/services", label: " Services" }
             ].map(({ to, label }) => (
               <Link
                 key={to}

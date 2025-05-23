@@ -8,6 +8,7 @@ import Login from "./Component/Login";
 import Signup from "./Component/Signup";
 import Footer from "./Component/FooterSection/Footer";
 import Founder from "./Component/HomeSection/Founder";
+import OurProcesses from "./Component/OurProcess";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/OurProcess" element={<OurProcesses/>}/>
       </Routes>
       <Footer />
     </Router>
