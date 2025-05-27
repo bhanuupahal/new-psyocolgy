@@ -12,6 +12,7 @@ import MentalHealth from "./MentalHealth"; // Import the new MentalHealth compon
 import Founder from "./Founder";
 
 import OurProcesses from "./OurProcess";
+import Services from "../ServiceSection/Services";
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
       <About />
       <Testimonials />
       <MentalHealth /> 
+      <Services/>
       <Founder/>
       <FAQ />
       <Contact />
