@@ -33,7 +33,11 @@ const About = () => {
                 <div className="absolute -inset-1 bg-gradient-to-r from-pink-500 to-purple-500 rounded-2xl blur opacity-30"></div>
                 <div className="relative bg-white rounded-2xl overflow-hidden shadow-lg">
                   <div className="h-64 bg-gradient-to-br from-teal-400 to-blue-500 flex items-center justify-center">
-                    <FaUserMd className="text-white text-7xl" />
+                    <img
+                      src="/images/IMG-20250523-WA0041.jpg"
+                      alt="Dr. Suman Behmani"
+                      className="h-full w-auto object-cover rounded-2xl shadow-lg"
+                    />
                   </div>
                   <div className="p-4 text-center">
                     <div className="flex justify-center space-x-1 mb-2">

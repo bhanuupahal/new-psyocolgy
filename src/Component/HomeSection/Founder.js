@@ -1,7 +1,47 @@
-import React from "react";
-import { FaQuoteLeft, FaQuoteRight, FaAward, FaUniversity, FaUsers, FaBrain, FaLinkedin, FaTwitter } from "react-icons/fa";
+import React, { useState } from "react";
+import { FaQuoteLeft, FaQuoteRight, FaAward, FaUniversity, FaUsers, FaBrain, FaLinkedin } from "react-icons/fa";
+
+const galleryImages = [
+  {
+    src: "/images/IMG-20250523-WA0031.jpg",
+    alt: "Gallery 1",
+    border: "border-teal-100",
+  },
+  {
+    src: "/images/IMG-20250523-WA0035.jpg",
+    alt: "Gallery 2",
+    border: "border-blue-100",
+  },
+  {
+    src: "/images/IMG-20250523-WA0037.jpg",
+    alt: "Gallery 3",
+    border: "border-purple-100",
+  },
+  {
+    src: "/images/IMG-20250523-WA0039.jpg",
+    alt: "Gallery 4",
+    border: "border-pink-100",
+  },
+  {
+    src: "/images/IMG-20250523-WA0042.jpg",
+    alt: "Gallery 5",
+    border: "border-yellow-100",
+  },
+  {
+    src: "/images/IMG-20250523-WA0033.jpg",
+    alt: "Gallery 6",
+    border: "border-green-100",
+  },
+];
 
 const Founder = () => {
+  const [modalImg, setModalImg] = useState(null);
+  const [current, setCurrent] = useState(0);
+
+  // Slide handlers for mobile
+  const prevSlide = () => setCurrent((prev) => (prev === 0 ? galleryImages.length - 1 : prev - 1));
+  const nextSlide = () => setCurrent((prev) => (prev === galleryImages.length - 1 ? 0 : prev + 1));
+
   return (
     <div className="min-h-screen bg-gradient-to-r from-teal-50 to-blue-50 py-20 relative overflow-hidden">
       {/* Enhanced decorative elements */}
@@ -12,14 +52,13 @@ const Founder = () => {
       <div className="max-w-6xl mx-auto px-6 relative z-10">
         {/* Enhanced Header Section */}
         <div className="text-center mb-16">
-          
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-blue-600">
             Co-Founder's Message
           </h1>
           <div className="w-32 h-1 bg-gradient-to-r from-teal-400 to-blue-400 mx-auto mt-6 rounded-full"></div>
           <h2 className="mt-6 text-2xl font-medium text-teal-700">Going beyond therapy</h2>
         </div>
-        
+
         {/* Main Content with enhanced styling */}
         <div className="flex flex-col lg:flex-row gap-12 items-center">
           {/* Image and credentials with enhanced styling */}
@@ -27,7 +66,7 @@ const Founder = () => {
             <div className="relative group">
               <div className="absolute -top-4 -left-4 w-full h-full bg-gradient-to-br from-teal-400 to-blue-500 rounded-2xl transform rotate-3 group-hover:rotate-1 transition-transform duration-300"></div>
               <img 
-                src="/images/founder.webp" 
+                src="/images/IMG-20250523-WA0029.jpg" 
                 alt="Dr. Suman Behmani" 
                 className="relative z-10 w-full h-auto rounded-2xl shadow-xl transform group-hover:scale-[1.02] transition-all duration-300"
                 onError={(e) => {
@@ -47,9 +86,7 @@ const Founder = () => {
                 >
                   <FaLinkedin size={20} />
                 </a>
-                <a href="#twitter" className="bg-white/80 hover:bg-white p-2 rounded-full text-blue-400 hover:text-blue-500 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-110">
-                  <FaTwitter size={20} />
-                </a>
+                
               </div>
             </div>
             
@@ -122,6 +159,72 @@ const Founder = () => {
             </div>
           </div>
         </div>
+
+        {/* Gallery Section */}
+        <div className="mt-20 mb-8">
+          <h2 className="text-3xl font-bold text-center text-teal-700 mb-8">Gallery</h2>
+          {/* Mobile slider */}
+          <div className="block md:hidden relative">
+            <div className="flex items-center justify-center">
+              <button
+                onClick={prevSlide}
+                className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 rounded-full p-2 shadow z-10"
+                aria-label="Previous"
+              >
+                &#8592;
+              </button>
+              <img
+                src={galleryImages[current].src}
+                alt={galleryImages[current].alt}
+                className={`w-full h-80 object-contain rounded-xl shadow-lg border-4 ${galleryImages[current].border} bg-white cursor-pointer`}
+                onClick={() => setModalImg(galleryImages[current])}
+              />
+              <button
+                onClick={nextSlide}
+                className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 rounded-full p-2 shadow z-10"
+                aria-label="Next"
+              >
+                &#8594;
+              </button>
+            </div>
+            <div className="flex justify-center mt-2 gap-2">
+              {galleryImages.map((_, idx) => (
+                <span
+                  key={idx}
+                  className={`w-2 h-2 rounded-full ${idx === current ? "bg-teal-600" : "bg-gray-300"}`}
+                />
+              ))}
+            </div>
+          </div>
+          {/* Grid for tablet/desktop */}
+          <div className="hidden md:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {galleryImages.map((img, idx) => (
+              <img
+                key={idx}
+                src={img.src}
+                alt={img.alt}
+                className={`w-full h-80 object-contain rounded-xl shadow-lg border-4 ${img.border} bg-white cursor-pointer transition-transform duration-200 hover:scale-105`}
+                onClick={() => setModalImg(img)}
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* Modal for enlarged image */}
+        {modalImg && (
+          <div
+            className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50"
+            onClick={() => setModalImg(null)}
+          >
+            <img
+              src={modalImg.src}
+              alt={modalImg.alt}
+              className="max-w-full max-h-[90vh] rounded-2xl shadow-2xl border-8 border-white"
+              onClick={e => e.stopPropagation()}
+            />
+          </div>
+        )}
+
       </div>
       
       {/* Animation styles */}

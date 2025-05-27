@@ -156,6 +156,15 @@ const Testimonials = () => {
             <FaLinkedin />
           </a>
         </div>
+
+        {/* Logo Section */}
+        <div className="flex justify-center mt-10">
+          <img
+            src="/images/logo (2).webp"
+            alt="Logo"
+            className="w-40 h-40 object-contain rounded-full shadow-xl border-4 border-teal-200 bg-white"
+          />
+        </div>
       </div>
     </div>
   );
