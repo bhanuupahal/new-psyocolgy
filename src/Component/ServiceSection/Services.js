@@ -40,13 +40,13 @@ const Services = () => {
           <div
             key={idx}
             onClick={() => {
-              if (name === "Marriage") navigate("/services/marriage");
-              if (name === "Separation") navigate("/services/separation");
+              if (name === "Marriage Counseling") navigate("/services/marriage");
+              if (name === "Separtion Anxiety Counseling") navigate("/services/separation");
               if (name === "Stress") navigate("/services/stress");
-              if (name === "Pregnancy") navigate("/services/pregancy");
-              if (name === "Family") navigate("/services/family");
-              if (name === "Divorce") navigate("/services/divorce");
-              if (name === "Couple") navigate("/services/couple");
+              if (name === "Pre and Pro Pregnancy Counseling") navigate("/services/pregancy");
+              if (name === "Family Therapy") navigate("/services/family");
+              if (name === "Divorce Cases Counseling") navigate("/services/divorce");
+              if (name === "Couple Counseling") navigate("/services/couple");
             }}
             className={`bg-gradient-to-br ${colors[idx]} rounded-2xl shadow-xl p-8 flex flex-col items-center justify-center text-xl font-semibold border-l-8 transition-transform duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer`}
           >

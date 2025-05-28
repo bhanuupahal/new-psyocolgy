@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaClipboardList, FaHandsHelping, FaCalendarCheck, FaYoutube, FaPlay, FaQuoteLeft } from 'react-icons/fa';
+import { FaClipboardList, FaHandsHelping, FaCalendarCheck, FaYoutube, FaQuoteLeft } from 'react-icons/fa';
+import { Link } from 'react-router-dom'; // Add this import
 
 const OurProcesses = () => {
   return (
@@ -43,25 +44,37 @@ const OurProcesses = () => {
                   desc: "The last step is to book your appointment with the Best as per your convenience time.",
                   color: "from-purple-400/90 to-purple-500/90"
                 },
-              ].map((step) => (
-                <div
-                  key={step.number}
-                  className="bg-white/90 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col sm:flex-row group"
-                >
-                  <div className={`bg-gradient-to-br ${step.color} p-5 sm:p-6 flex items-center justify-center sm:rounded-l-lg group-hover:scale-102 transition-transform duration-300`}>
-                    <div className="flex flex-col items-center sm:items-center">
-                      <div className="bg-white/20 w-10 h-10 rounded-full flex items-center justify-center mb-1.5 shadow-inner">
-                        {step.icon}
+              ].map((step) => {
+                const card = (
+                  <div
+                    className="bg-white/90 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col sm:flex-row group cursor-pointer"
+                  >
+                    <div className={`bg-gradient-to-br ${step.color} p-5 sm:p-6 flex items-center justify-center sm:rounded-l-lg group-hover:scale-102 transition-transform duration-300`}>
+                      <div className="flex flex-col items-center sm:items-center">
+                        <div className="bg-white/20 w-10 h-10 rounded-full flex items-center justify-center mb-1.5 shadow-inner">
+                          {step.icon}
+                        </div>
+                        <span className="text-white text-xl font-bold">{step.number}</span>
                       </div>
-                      <span className="text-white text-xl font-bold">{step.number}</span>
+                    </div>
+                    <div className="p-5 flex-1">
+                      <h3 className="font-bold text-lg mb-2 text-gray-700 group-hover:text-teal-600 transition-colors duration-300">{step.title}</h3>
+                      <p className="text-gray-600 text-sm leading-relaxed">{step.desc}</p>
                     </div>
                   </div>
-                  <div className="p-5 flex-1">
-                    <h3 className="font-bold text-lg mb-2 text-gray-700 group-hover:text-teal-600 transition-colors duration-300">{step.title}</h3>
-                    <p className="text-gray-600 text-sm leading-relaxed">{step.desc}</p>
-                  </div>
-                </div>
-              ))}
+                );
+                // Only wrap step 2 in a Link
+                if (step.number === 2) {
+                  return (
+                    <div key={step.number}>
+                      <Link to="/services" style={{ textDecoration: "none" }}>
+                        {card}
+                      </Link>
+                    </div>
+                  );
+                }
+                return <div key={step.number}>{card}</div>;
+              })}
             </div>
 
             {/* Footer Text with calmer styling */}

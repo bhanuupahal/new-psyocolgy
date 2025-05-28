@@ -139,7 +139,7 @@ const Testimonials = () => {
 
         {/* Social Media Icons */}
         <div className="flex justify-center items-center gap-8 mt-16">
-          <a href="https://www.facebook.com/share/16HEhPewwL/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer"
+          <a href="https://www.facebook.com/sumni.dear" target="_blank" rel="noopener noreferrer"
             className="border-4 border-blue-600 rounded-full p-4 hover:bg-blue-600 hover:text-white transition text-blue-600 text-4xl">
             <FaFacebook />
           </a>

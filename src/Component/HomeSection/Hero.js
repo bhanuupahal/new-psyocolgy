@@ -30,7 +30,7 @@ const Hero = () => {
       </div>
       
       {/* Image Section */}
-      <div className="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[32rem] lg:h-[32rem] rounded-full overflow-hidden border-4 mx-auto lg:mr-24">
+      <div className="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[32rem] lg:h-[32rem] rounded-full overflow-hidden mx-auto lg:mr-24">
         <img src="/images/bg11.webp" alt="Background" className="w-full h-full object-cover" />
       </div>
     </div>

@@ -14,21 +14,23 @@ const Nav = () => {
   return (
     <>
       <nav className="bg-white shadow-md sticky top-0 z-50">
-        <div className="max-w-screen-xl flex items-center justify-between mx-auto py-3 px-2">
+        <div className="max-w-screen-xl flex items-center justify-between  mx-auto py-3 px-2">
           {/* Logo */}
-          <Link to="/home" className="flex items-center">
-            <img 
-              src="/images/logo.webp" 
-              className="h-16 md:h-20 transition-all duration-300 hover:scale-105" 
-              alt="Logo"  
-            />
-          </Link>
+          <div className="flex items-center -ml-40 ">
+            <Link to="/home" className="flex">
+              <img 
+                src="/images/logo.webp" 
+                className="h-16 md:h-20 transition-all duration-300 hover:scale-105" 
+                alt="Logo"  
+              />
+            </Link>
+          </div>
 
           {/* Mobile Menu Toggle */}
           <button
             onClick={toggleMobileMenu}
             type="button"
-            className="md:hidden p-2 w-10 h-10 flex items-center justify-center text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            className="md:hidden p-2 w-10 h-10  flex items-center justify-center text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
             aria-expanded={isMobileMenuOpen}
           >
             <span className="sr-only">Toggle menu</span>
@@ -44,8 +46,8 @@ const Nav = () => {
           </button>
 
           {/* Navigation Links */}
-          <div className={`w-full md:flex md:w-auto ${isMobileMenuOpen ? "block absolute top-full left-0 right-0 bg-gradient-to-r from-orange-100 to-green-50 shadow-lg p-4 z-50" : "hidden"}`}>
-            <div className="flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-8">
+          <div className={`w-full md:flex md:w-auto ${isMobileMenuOpen ? "block absolute top-full left-0 right-0  bg-gradient-to-r from-orange-100 to-green-50 shadow-lg p-4 z-50" : "hidden"}`}>
+            <div className="flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-8  mr-36">
               {[
                 { to: "/home", label: "Home" }, 
                 { to: "/about", label: "About" }, 
@@ -64,7 +66,7 @@ const Nav = () => {
 
               
 
-              {/* Login, WhatsApp, & Signup Links */}
+              {/*, WhatsApp, & Signup Links */}
               
                 {/* WhatsApp Button */}
                 <a
