@@ -9,7 +9,7 @@ const OurProcesses = () => {
         {/* Header Section with refined styling */}
         <div className="text-center mb-14">
 
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-700 to-blue-700 mb-3">Our Processes</h2>
+          <h1 className="text-3xl md:text-5xl font-bold font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-700 to-blue-700 mb-3">Our Processes</h1>
           <div className="w-24 h-0.5 bg-gradient-to-r from-teal-300 to-blue-300 mx-auto mb-5 rounded-full"></div>
           <p className="text-gray-600 text-base max-w-2xl mx-auto leading-relaxed">
             At <span className="font-medium text-teal-600">Reset Yourself</span>, we follow a very simple method of letting our clients do the booking.
