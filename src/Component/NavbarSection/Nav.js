@@ -68,7 +68,7 @@ const Nav = () => {
               
                 {/* WhatsApp Button */}
                 <a
-                  href="https://wa.me/+91 94682 24451" // Replace with your WhatsApp number
+                  href="https://api.whatsapp.com/send/?phone=%2B919468224451&text=Hi&type=phone_number&app_absent=0" // Replace with your WhatsApp number
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center text-white font-serif text-lg bg-green-600 rounded-3xl px-6 py-2 hover:bg-green-600 hover:shadow-lg transition duration-200"

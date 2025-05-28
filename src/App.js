@@ -15,6 +15,10 @@ import Pregancy from "./Component/ServiceSection/Pregancy";
 import Family from "./Component/ServiceSection/Family";
 import Divorce from "./Component/ServiceSection/Divorce";
 import Couple from "./Component/ServiceSection/Couple";
+import Admin from "./Component/AdminSection/Admin";
+import Login from "./Component/AdminSection/Login";
+import Register from "./Component/AdminSection/Register";
+import StatsCard from "./Component/HomeSection/Stats";
 
 function App() {
   return (
@@ -35,6 +39,10 @@ function App() {
         <Route path="/services/family" element={<Family />} />
         <Route path="/services/divorce" element={<Divorce />} />
         <Route path="/services/couple" element={<Couple />} />
+        <Route path="/admin" element={<Admin />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/Stats" element={<StatsCard />} />
       </Routes>
       <Footer />
     </Router>

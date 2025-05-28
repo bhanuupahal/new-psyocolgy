@@ -12,7 +12,10 @@ import MentalHealth from "./MentalHealth"; // Import the new MentalHealth compon
 import Founder from "./Founder";
 
 import OurProcesses from "./OurProcess";
+
 import Services from "../ServiceSection/Services";
+import { SiTaipy } from "react-icons/si";
+import StatsCard from "./Stats";
 
 const Home = () => {
   return (
@@ -21,6 +24,7 @@ const Home = () => {
       <Hero />
       <Reset />
       <OurProcesses/>
+      <StatsCard/>
       <About />
       <Testimonials />
       <MentalHealth /> 

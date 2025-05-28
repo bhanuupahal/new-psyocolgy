@@ -2,14 +2,14 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 const serviceNames = [
-  "Marriage",
-  "Separation",
+  "Marriage Counseling",
+  "Separtion Anxiety Counseling",
   "Stress",
-  "Pregnancy",
-  "Family",
-  "Divorce",
-  "Couple",
-  "Long Lasting",
+  "Pre and Pro Pregnancy Counseling",
+  "Family Therapy",
+  "Divorce Cases Counseling",
+  "Couple Counseling",
+  "Long Lasting Relationship",
 ];
 
 const colors = [

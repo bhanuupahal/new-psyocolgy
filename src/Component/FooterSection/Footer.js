@@ -17,16 +17,21 @@ const Footer = () => {
               right place for mental wellness and growth.
             </p>
             <div className="flex space-x-4">
-              <a href="https://facebook.com" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition duration-300">
+              <a href="https://www.facebook.com/share/16HEhPewwL/?mibextid=wwXIfr" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition duration-300">
                 <FaFacebook className="text-white" />
               </a>
-              <a href="www.youtube.com/@Dr.sumanBehmani" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition duration-300">
+              <a href="https://youtu.be/TF9EFA2P2Zk?si=Gu2PCICGMzoODqEX" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition duration-300">
                 <FaYoutube className="text-white" />
               </a>
               <a href="https://twitter.com" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition duration-300">
                 <FaTwitter className="text-white" />
               </a>
-              <a href="https://instagram.com" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition duration-300">
+              <a
+                href="https://www.instagram.com/dr_suman_behmani?igsh=Z284dWVsY2FmNHE1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition duration-300"
+              >
                 <FaInstagram className="text-white" />
               </a>
             </div>
@@ -97,10 +102,10 @@ const Footer = () => {
             </div>
             <h3 className="text-xl font-serif font-bold mb-4 text-teal-300">Follow Us</h3>
             <div className="grid grid-cols-2 gap-3">
-              <a href="https://facebook.com" className="flex items-center space-x-2 text-gray-300 hover:text-teal-300 transition duration-300">
+              <a href="https://www.facebook.com/share/16HEhPewwL/?mibextid=wwXIfr" className="flex items-center space-x-2 text-gray-300 hover:text-teal-300 transition duration-300">
                 <FaFacebook /> <span>Facebook</span>
               </a>
-              <a href="www.youtube.com/@Dr.sumanBehmani" className="flex items-center space-x-2 text-gray-300 hover:text-teal-300 transition duration-300">
+              <a href="https://youtu.be/TF9EFA2P2Zk?si=Gu2PCICGMzoODqEX" className="flex items-center space-x-2 text-gray-300 hover:text-teal-300 transition duration-300">
                 <FaYoutube /> <span>YouTube</span>
               </a>
             </div>

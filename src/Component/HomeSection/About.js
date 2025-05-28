@@ -52,7 +52,7 @@ const About = () => {
             </div>
             <div className="md:w-2/3">
               <p className="text-gray-700 leading-relaxed mb-6 text-lg">
-                Dr. Suman Behmani is a psychologist and family therapist specializing in mental health treatment and counseling across various life stages. Offering a safe, supportive, and confidential environment, Dr. Suman helps individuals manage their thoughts, feelings, and behaviors while learning new skills to manage stress, anxiety, depression, anger, conflict, communication issues and more.
+                Dr. Suman Behmani is a Psychologist and Family Therapist Specializing in Mental Health Treatment and Counseling across various life stages. Offering a safe, Supportive, and Confidential Environment, Dr. Suman helps individuals manage their Thoughts, Feelings, and Behaviors while learning new skills to manage Stress, Anxiety, Depression, Anger, Conflict, Communication Issues and More.
               </p>
               <p className="text-gray-700 leading-relaxed text-lg">
                 Committed to enhancing well-being and improving relationships, Dr. Suman aims to help individuals live more fulfilling lives and develop skills that will benefit their personal and professional growth.
@@ -60,32 +60,7 @@ const About = () => {
             </div>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
-            <div className="bg-gradient-to-br from-pink-50 to-pink-100 p-4 rounded-xl text-center">
-              <div className="bg-pink-200 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
-                <FaAward className="text-pink-600 text-xl" />
-              </div>
-              <p className="font-medium text-pink-800">Certified Expert</p>
-            </div>
-            <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-4 rounded-xl text-center">
-              <div className="bg-purple-200 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
-                <FaCertificate className="text-purple-600 text-xl" />
-              </div>
-              <p className="font-medium text-purple-800">Licensed Therapist</p>
-            </div>
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-4 rounded-xl text-center">
-              <div className="bg-blue-200 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
-                <FaGraduationCap className="text-blue-600 text-xl" />
-              </div>
-              <p className="font-medium text-blue-800">PhD in Psychology</p>
-            </div>
-            <div className="bg-gradient-to-br from-teal-50 to-teal-100 p-4 rounded-xl text-center">
-              <div className="bg-teal-200 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
-                <FaHeart className="text-teal-600 text-xl" />
-              </div>
-              <p className="font-medium text-teal-800">Compassionate Care</p>
-            </div>
-          </div>
+          
         </div>
       </div>
 
