@@ -5,7 +5,7 @@ import { FaUsers, FaAward, FaHandshake } from "react-icons/fa";
 const stats = [
   { number: "+2466", label: "Sessions", icon: <FaUsers /> },
   { number: "+16", label: "Awards", icon: <FaAward /> },
-  { number: "+5345", label: "Clients Base", icon: <FaHandshake /> },
+  { number: "+3158", label: "Clients Base", icon: <FaHandshake /> },
 ];
 
 const StatsCard = () => (

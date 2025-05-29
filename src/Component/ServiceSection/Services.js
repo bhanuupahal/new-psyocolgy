@@ -71,19 +71,19 @@ const Services = () => {
       <h1 className="text-7xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-blue-600 mb-10 drop-shadow-lg">
         Our Services
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4  gap-10">
         {services.map((service, idx) => (
-          <div key={service.name} className="flex flex-col items-center w-full">
+          <div key={service.name} className="flex flex-col items-center  w-full">
             <div
               onClick={() => navigate(service.route)}
-              className={`bg-gradient-to-br ${colors[idx]} rounded-2xl shadow-xl p-8 flex flex-col items-center justify-center border-l-8 transition-transform duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer w-full`}
+              className={`bg-gradient-to-br ${colors[idx]} rounded-2xl shadow-xl  p-8 flex flex-col items-center justify-center border-l-8 transition-transform duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer w-full`}
               style={{
                 backgroundImage: `url('${service.bg}')`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 minHeight: "350px",
                 width: "100%",
-                maxWidth: "600px",
+                maxWidth: "900px",
               }}
             >
               {/* No text inside the image */}
