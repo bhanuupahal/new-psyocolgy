@@ -9,21 +9,21 @@ const stats = [
 ];
 
 const StatsCard = () => (
-  <div className="bg-gradient-to-r from-blue-200 via-pink-300 to-purple-400 py-12 px-6 rounded-2xl shadow-2xl my-10">
+  <div className="bg-gradient-to-r from-blue-200 via-pink-300 to-purple-400 py-6 sm:py-12 px-3 sm:px-6 rounded-2xl shadow-2xl my-10">
     <h2 className="text-3xl font-extrabold text-white text-center mb-8 tracking-wide drop-shadow-lg">
       Our Achievements
     </h2>
-    <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8">
+    <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
       {stats.map((stat, idx) => (
         <div
           key={idx}
-          className="flex flex-col items-center bg-white/10 rounded-xl p-8 shadow-lg hover:scale-105 transition-transform duration-300"
+          className="flex flex-col items-center bg-white/10 rounded-xl p-4 sm:p-8 shadow-lg hover:scale-105 transition-transform duration-300"
         >
-          <div className="text-5xl mb-4 text-white drop-shadow-lg animate-bounce">
+          <div className="text-4xl sm:text-5xl mb-2 sm:mb-4 text-white drop-shadow-lg animate-bounce">
             {stat.icon}
           </div>
-          <div className="text-4xl font-bold text-white drop-shadow">{stat.number}</div>
-          <div className="text-lg mt-2 text-green-100 tracking-wide font-medium">{stat.label}</div>
+          <div className="text-3xl sm:text-4xl font-bold text-white drop-shadow">{stat.number}</div>
+          <div className="text-base sm:text-lg mt-1 sm:mt-2 text-green-100 tracking-wide font-medium">{stat.label}</div>
         </div>
       ))}
     </div>
@@ -32,4 +32,4 @@ const StatsCard = () => (
 
 export default StatsCard;
 
-// Note: The command `npm install react-icons` is not included in the file as it's a terminal command and not part of the code. Please run it in your terminal to install the required package.
+

@@ -16,7 +16,7 @@ const Nav = () => {
       <nav className="bg-white shadow-md sticky top-0 z-50">
         <div className="max-w-screen-xl flex items-center justify-between  mx-auto py-3 px-2">
           {/* Logo */}
-          <div className="flex items-center -ml-40 ">
+          <div className="flex items-center -ml-30 ">
             <Link to="/home" className="flex">
               <img 
                 src="/images/logo.webp" 
