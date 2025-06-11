@@ -32,7 +32,7 @@ const Contact = () => {
             <div className="bg-gradient-to-br from-teal-50 to-blue-50 p-6 rounded-xl">
               <h2 className="text-2xl font-serif font-semibold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-blue-600">Our Location</h2>
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3464.5!2d75.7!3d29.15!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391237f467e7a7a7%3A0x7f82e5e2aa5a8c0!2sDSS-50%2C%20Sector%2015%2C%20Hisar%2C%20Haryana!5e0!3m2!1sen!2sin!4v1625661234567!5m2!1sen!2sin" 
+                src="https://www.google.com/maps?q=Study+Culture+-+Education+Abroad+%7C+Career+Counselling+%7C+IELTS%2FPTE+Test+Prep%2C+51-S%2C+Gurudwara+Rd%2C+Model+Town%2C+Hisar%2C+Haryana+125001&output=embed" 
                 width="100%" 
                 height="400" 
                 style={{ border: 0, borderRadius: '0.5rem' }}
@@ -57,7 +57,8 @@ const Contact = () => {
                     </div>
                     <div>
                       
-                      <p className="text-teal-700 font-medium">Call us at +91-74047-94451,9468224451</p>
+                      <p className="text-teal-700 font-medium">Call us at +91-7404794451,</p>
+                      <p className="text-teal-700 font-medium">         +91-9468224451</p>
                     </div>
                   </div>
                 </div>
@@ -81,15 +82,15 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-medium text-gray-800">Office</h3>
-                      <p className="text-teal-700">DSS-50 KAMRI ROAD SEC 15 HISAR HARYANA, INDIA</p>
+                      <p className="text-teal-700">Study Culture - Education Abroad | Career Counselling | IELTS/PTE Test Prep </p>
                     </div>
                   </div>
                 </div>
                 <div className="mt-8 p-4 bg-white/70 rounded-lg">
                 <h3 className="font-medium text-gray-800 mb-2">Office Hours</h3>
                 <p className="text-sm text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM</p>
-                <p className="text-sm text-gray-600">Saturday: 10:00 AM - 4:00 PM</p>
-                <p className="text-sm text-gray-600">Sunday: 10:00 AM - 4:00 PM</p>
+                <p className="text-sm text-gray-600">Saturday-Sunday: 10:00 AM - 4:00 PM</p>
+             
               </div>
               </div>
             </div>

@@ -173,7 +173,7 @@ const Testimonials = () => {
 // Testimonial data
 const testimonials = [
   {
-    name: "Rohit M.",
+    name: "Romit k.",
     quote: "Dr. Suman Behmani has been a life-changer for me. Her compassionate approach and insightful guidance helped me navigate through a very tough period in my life. I highly recommend her services."
   },
   {

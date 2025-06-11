@@ -12,9 +12,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-serif font-bold mb-6 text-teal-300">A SOULFUL JOURNEY</h3>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Reset Yourself listens to people's hearts and guides them towards a better life. 
-              We wish to render our services online while getting paid, providing you with the 
-              right place for mental wellness and growth.
+             At Reset Yourself, we believe that mental health isn’t a destination—it’s a daily journey. Our mission is to walk that path with you. Unlike traditional therapy, coaching is action-oriented and future-focused. We don’t diagnose; instead, we listen, guide, and support you in creating a healthier mindset and reaching your goals. Whether you're stuck in old patterns, struggling with low motivation, or simply want to improve your emotional fitness, we're here to walk alongside you with empathy and intention.
             </p>
             <div className="flex space-x-4">
               <a href="https://www.facebook.com/share/16HEhPewwL/?mibextid=wwXIfr" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition duration-300">

@@ -16,7 +16,7 @@ const Hero = () => {
           Instant Mental Health Support
         </h1>
         <p className="text-base sm:text-lg lg:text-xl mb-8 text-gray-700">
-          Reset Yourself. Work on helping you find the triggers and finding solutions to coping with the triggers and anxiety.
+          Reset Yourself. Guiding You to Peace, One Step at a Time. A Tailored Mental Health Coaching for those Who Lead, Love, and Live. Finally empower yourself with us to Rise, Reclaim, and Renew.
         </p>
 
         <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 mb-8">
